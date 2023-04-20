@@ -16,7 +16,7 @@ Contains tests for the API response payload.
 ### ./pyproject.toml
 Contains project dependencies
 ### ./poetry.lock
-Automatically generated. manages the dependencies from pyproject.toml 
+Will be automatically generated. manages the dependencies from pyproject.toml 
 ### ./settings.py
 Contains some constant values (url data, string values, etc)
 ## How to Run the Tests
