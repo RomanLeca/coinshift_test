@@ -7,6 +7,8 @@ Poetry is used as the package manager for the project dependencies.
 ## Files
 ### ./modules/api_client.py 
 Contains a class for interacting with the blockchain indexer API.
+### ./modules/search_page_locators.py
+Contains a class for interacting with the indexer search page.
 ### ./conftest.py
 Contains fixtures and configuration for Pytest.
 ### ./tests/frontend/test_indexer_page.py
@@ -41,4 +43,3 @@ or follow any other instructions from https://python-poetry.org/docs/#installing
 ### Future potential improvements
 - Run tests in a docker environment
 - Add Allure reporting (looks nice and allows for a "BDD-ish" layer)
-- Add a page object layer to DRY page locators in code
