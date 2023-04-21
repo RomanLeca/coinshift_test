@@ -1,3 +1,5 @@
+import time
+
 import pytest
 
 from settings import HASH_VALUE, TO_ADDRESS, FROM_ADDRESS, BASE_URL, FE_PORT
@@ -48,5 +50,5 @@ def test_wrong_hash_produces_no_results(indexer_search_page):
     """
     page = indexer_search_page
     page.search_for(HASH_VALUE+"non_existing")
-    assert not page.RESULTS_CONTAINER.is_visible()
+    page.RESULTS_CONTAINER.wait_for(timeout=1000, state="detached")
 

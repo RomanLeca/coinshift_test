@@ -11,7 +11,7 @@ def browser() -> Browser:
     Fixture to provide a browser instance for testing. Runs once per execution session.
     """
     with sync_playwright() as p:
-        browser = p.chromium.launch(headless=False)
+        browser = p.chromium.launch(headless=True)
         yield browser
         browser.close()
 
